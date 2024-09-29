@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es ">
+<head>
+<meta charset ="UTF -8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Mascotas</title>
+    <style>
+
+    form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    background-color:lightgray;
+    }
+
+    label{
+    font-weight: bold; 
+    }
+
+    input, select{
+    width: 100%;
+    margin-bottom: 10px;
+    }
+
+    input [type="submit"] {
+    background-color: []darkblue;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    }
+    
+</style>
+</head>
+    
+    <body>
+     <h1>Formulario de Registro de Mascotas</h1>
+    <form>
+        <label for="nombre">Nombre de la mascota:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="tipo">Tipo de mascota:</label>
+        <select id="tipo" name="tipo">
+    <option value="perro">Perro</option>
+    <option value="gato">Gato</option>
+</select>
+
+    <label for="vacunado">¿Está vacunado?</label>
+    <input type="checkbox" id="vacunado" name="vacunado"> Si
+
+    <label>Género: </label>
+        <input type="radio" id="macho" name="genero" value="macho"> Macho
+        <input type="radio" id="hembra" name="genero" value="hembra"> Hembra
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
